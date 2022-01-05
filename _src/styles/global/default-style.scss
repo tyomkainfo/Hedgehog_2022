@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  color: black;
+  font-family: Axiforma, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  margin-bottom: 0;
+}
+
+li::marker {
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+button {
+  color: black;
+
+  &:focus, &:focus-visible {
+    outline: none;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+body{
+  background-color: white;
+}
+
+hr {
+  background-color: $black;
+}
+
+//_____Typography_____
+
+p {
+  font-family: Axiforma, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+
+  @include max-screen(991px) {
+    font-size: 16px;
+  }
+
+  &.light {
+    font-weight: 300;
+  }
+}

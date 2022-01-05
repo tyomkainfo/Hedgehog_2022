@@ -1,0 +1,228 @@
+
+header {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  @include max-screen(767px){
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    .nav-item {
+      margin-right: 44px;
+      @include max-screen(767px){
+       margin-right: 0;
+        padding-bottom: 19px;
+        padding-left: 18px;
+        border-bottom: solid 1px #dae1ea;
+        width: 100%;
+        padding-top: 26px;
+      }
+      &:nth-child(5) {
+        margin-right: 62px;
+        @include max-screen(767px){
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(6) {
+        margin-right: 33px;
+        @include max-screen(767px){
+          margin-right: 0;
+          border: none;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+        @include max-screen(767px){
+          border: none;
+        }
+      }
+      .nav-link {
+        font-family: $main_fonts;
+        font-weight: 500;
+        color: #333333;
+        font-size: 17px;
+        padding: 0 !important;
+        line-height: 36px;
+        transition: 0.3s;
+        @include max-screen(767px){
+          font-size: 24px;
+        }
+        &:hover, &.active {
+          color: #2e8b6d;
+        }
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-family: $main_fonts;
+    font-weight: bold;
+    color: $main_black;
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 0;
+    @include max-screen(767px){
+      font-size: 31px;
+      line-height: 31px;
+    }
+  }
+
+  .language {
+    display: flex;
+    align-items: center;
+  }
+
+  .language img {
+    display: inline-block;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 10px;
+  }
+
+  .language a {
+    font-family: $main_fonts;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    @include max-screen(767px){
+      font-size: 19px;
+    }
+  }
+
+  .lang_item:after {
+    content: "\f078";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 13px;
+  }
+
+  .sub_menu {
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  .language ul:hover .sub_menu {
+    opacity: 1;
+  }
+
+  .language .sub_menu {
+    position: absolute;
+    margin-left: -8px;
+    padding: 5px 0;
+  }
+
+  .language .sub_menu li a {
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: rgba(46, 139, 109, 0.8);
+    width: 100%;
+  }
+
+  .btn {
+    line-height: 52px;
+    padding-left: 17px;
+    padding-right: 23px;
+    border-radius: 32px;
+    border: solid 2px #2e8b6d;
+    font-size: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #2e8b6d;
+    font-family: $main_fonts;
+    font-weight: 500;
+    @include max-screen(767px){
+      font-size: 18px;
+    }
+    img{
+      margin-right: 13px;
+      animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
+      display: inline-block;
+      position: relative;
+    }
+    &:hover{
+      color: #2e8b6d;
+      box-shadow: 0 0 10px rgba(46, 139, 109,0.5);
+    }
+  }
+  .navbar-light .navbar-toggler{
+    border: none;
+    .navbar-toggler-icon{
+      opacity: 1!important;
+      color: black;
+    }
+    &:focus{
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+@keyframes bouncing{
+  0%  { bottom: 0; }
+  100% { bottom: 5px;  }
+}
+
+
+.navbar-toggler {
+  border: none;
+  color: black !important;
+}
+
+.navbar-toggler {
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.bar1, .bar2, .bar3 {
+  width: 18px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(0px, 9.5px);
+  transform: rotate(-45deg) translate(0px, 9.5px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-0px, -10px);
+  transform: rotate(45deg) translate(-0px, -10px);
+}
+.order-md-6{
+  order: 1!important;
+  @include min-screen(768px){
+    order: 6!important;
+  }
+}
+.order-md-7{
+  order: 7!important;
+  @include min-screen(768px){
+    order: 7!important;
+  }
+}
+.order-6{
+  @include max-screen(767px){
+    order: 6!important;
+  }
+}
