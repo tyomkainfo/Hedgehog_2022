@@ -103,8 +103,8 @@ p.light {
 }
 
 header {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 54px;
+  padding-bottom: 54px;
 }
 
 header .navbar {
@@ -334,6 +334,11 @@ header .navbar-light .navbar-toggler:focus {
           order: 7 !important;
 }
 
+.main_block .m_banner {
+  position: relative;
+  right: -90px;
+}
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -445,6 +450,10 @@ header .navbar-light .navbar-toggler:focus {
     -webkit-box-ordinal-group: 7 !important;
         -ms-flex-order: 6 !important;
             order: 6 !important;
+  }
+
+  .main_block .m_banner {
+    right: 0;
   }
 
 @supports (-webkit-appearance:none) {

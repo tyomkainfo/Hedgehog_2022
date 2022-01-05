@@ -1,7 +1,7 @@
 
 header {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 54px;
+  padding-bottom: 54px;
   @include max-screen(992px){
     padding-top: 24px;
     padding-bottom: 24px;
@@ -244,5 +244,15 @@ header {
 .order-6{
   @include max-screen(992px){
     order: 6!important;
+  }
+}
+
+.main_block{
+  .m_banner{
+    position: relative;
+    right: -90px;
+    @include max-screen(992px){
+      right: 0;
+    }
   }
 }
