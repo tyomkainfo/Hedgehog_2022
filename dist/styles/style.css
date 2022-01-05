@@ -1,0 +1,423 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: black;
+  font-family: Axiforma, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  margin-bottom: 0;
+}
+
+li::marker {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+button {
+  color: black;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+}
+
+hr {
+  background-color: #000000;
+}
+
+p {
+  font-family: Axiforma, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+p.light {
+  font-weight: 300;
+}
+
+.label-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../../fonts/Geometria.eot");
+  src: url("../../fonts/Geometria.eot?#iefix") format("embedded-opentype"), url("../../fonts/Geometria.woff2") format("woff2"), url("../../fonts/Geometria.woff") format("woff"), url("../../fonts/Geometria.ttf") format("truetype"), url("../../fonts/Geometria.svg#Geometria") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../../fonts/Geometria-Medium.eot");
+  src: url("../../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Geometria-Medium.woff2") format("woff2"), url("../../fonts/Geometria-Medium.woff") format("woff"), url("../../fonts/Geometria-Medium.ttf") format("truetype"), url("../../fonts/Geometria-Medium.svg#Geometria-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../../fonts/Geometria-Bold.eot");
+  src: url("../../fonts/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Geometria-Bold.woff2") format("woff2"), url("../../fonts/Geometria-Bold.woff") format("woff"), url("../../fonts/Geometria-Bold.ttf") format("truetype"), url("../../fonts/Geometria-Bold.svg#Geometria-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+header {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+header .navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+header .navbar .nav-item {
+  margin-right: 44px;
+}
+
+header .navbar .nav-item:nth-child(5) {
+  margin-right: 62px;
+}
+
+header .navbar .nav-item:nth-child(6) {
+  margin-right: 33px;
+}
+
+header .navbar .nav-item:last-of-type {
+  margin-right: 0;
+}
+
+header .navbar .nav-item .nav-link {
+  font-family: "Geometria";
+  font-weight: 500;
+  color: #333333;
+  font-size: 17px;
+  padding: 0 !important;
+  line-height: 36px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .navbar .nav-item .nav-link:hover,
+header .navbar .nav-item .nav-link.active {
+  color: #2e8b6d;
+}
+
+header .navbar-brand {
+  font-family: "Geometria";
+  font-weight: bold;
+  color: #282828;
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 0;
+}
+
+header .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .language img {
+  display: inline-block;
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 10px;
+}
+
+header .language a {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  color: #333333;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header .lang_item:after {
+  content: "\f078";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 13px;
+}
+
+header .sub_menu {
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .language ul:hover .sub_menu {
+  opacity: 1;
+}
+
+header .language .sub_menu {
+  position: absolute;
+  margin-left: -8px;
+  padding: 5px 0;
+}
+
+header .language .sub_menu li a {
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: rgba(46, 139, 109, 0.8);
+  width: 100%;
+}
+
+header .btn {
+  line-height: 52px;
+  padding-left: 17px;
+  padding-right: 23px;
+  border-radius: 32px;
+  border: solid 2px #2e8b6d;
+  font-size: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #2e8b6d;
+  font-family: "Geometria";
+  font-weight: 500;
+}
+
+header .btn img {
+  margin-right: 13px;
+  -webkit-animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+          animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+  display: inline-block;
+  position: relative;
+}
+
+header .btn:hover {
+  color: #2e8b6d;
+  -webkit-box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
+          box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
+}
+
+header .navbar-light .navbar-toggler {
+  border: none;
+}
+
+header .navbar-light .navbar-toggler .navbar-toggler-icon {
+  opacity: 1 !important;
+  color: black;
+}
+
+header .navbar-light .navbar-toggler:focus {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@-webkit-keyframes bouncing {
+  0% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: 5px;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: 5px;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  color: black !important;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 18px;
+  height: 2px;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(0px, 9.5px);
+  -ms-transform: rotate(-45deg) translate(0px, 9.5px);
+      transform: rotate(-45deg) translate(0px, 9.5px);
+}
+
+/* Fade out the second bar */
+
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(0px, -10px);
+  -ms-transform: rotate(45deg) translate(0px, -10px);
+      transform: rotate(45deg) translate(0px, -10px);
+}
+
+.order-md-6 {
+  -webkit-box-ordinal-group: 2 !important;
+      -ms-flex-order: 1 !important;
+          order: 1 !important;
+}
+
+.order-md-7 {
+  -webkit-box-ordinal-group: 8 !important;
+      -ms-flex-order: 7 !important;
+          order: 7 !important;
+}
+
+@supports (-webkit-appearance:none) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .order-md-6 {
+    -webkit-box-ordinal-group: 7 !important;
+        -ms-flex-order: 6 !important;
+            order: 6 !important;
+  }
+
+  .order-md-7 {
+    -webkit-box-ordinal-group: 8 !important;
+        -ms-flex-order: 7 !important;
+            order: 7 !important;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 16px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  header .navbar .nav-item {
+    margin-right: 0;
+    padding-bottom: 19px;
+    padding-left: 18px;
+    border-bottom: solid 1px #dae1ea;
+    width: 100%;
+    padding-top: 26px;
+  }
+
+  header .navbar .nav-item:nth-child(5) {
+    margin-right: 0;
+  }
+
+  header .navbar .nav-item:nth-child(6) {
+    margin-right: 0;
+    border: none;
+  }
+
+  header .navbar .nav-item:last-of-type {
+    border: none;
+  }
+
+  header .navbar .nav-item .nav-link {
+    font-size: 24px;
+  }
+
+  header .navbar-brand {
+    font-size: 31px;
+    line-height: 31px;
+  }
+
+  header .language a {
+    font-size: 19px;
+  }
+
+  header .btn {
+    font-size: 18px;
+  }
+
+  .order-6 {
+    -webkit-box-ordinal-group: 7 !important;
+        -ms-flex-order: 6 !important;
+            order: 6 !important;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
