@@ -12,6 +12,9 @@ header {
 
     .nav-item {
       margin-right: 44px;
+      @include max-screen(1399px){
+        margin-right: 20px;
+      }
       @include max-screen(768px){
        margin-right: 0;
         padding-bottom: 19px;
@@ -22,6 +25,9 @@ header {
       }
       &:nth-child(5) {
         margin-right: 62px;
+        @include max-screen(1399px){
+          margin-right: 32px;
+        }
         @include max-screen(768px){
           margin-right: 0;
         }
@@ -29,6 +35,9 @@ header {
 
       &:nth-child(6) {
         margin-right: 33px;
+        @include max-screen(1399px){
+          margin-right: 20px;
+        }
         @include max-screen(768px){
           margin-right: 0;
           border: none;
