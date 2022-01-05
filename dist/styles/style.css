@@ -356,9 +356,17 @@ header .navbar-light .navbar-toggler:focus {
 }
 }
 
-@media screen and (max-width: 991px) {
-  p {
-    font-size: 16px;
+@media screen and (max-width: 1399px) {
+  header .navbar .nav-item {
+    margin-right: 20px;
+  }
+
+  header .navbar .nav-item:nth-child(5) {
+    margin-right: 32px;
+  }
+
+  header .navbar .nav-item:nth-child(6) {
+    margin-right: 20px;
   }
 
 @supports (-webkit-appearance:none) {
@@ -366,7 +374,29 @@ header .navbar-light .navbar-toggler:focus {
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
+  header .navbar .nav-item {
+    margin-right: 12px;
+  }
+
+  header .navbar .nav-item:nth-child(5) {
+    margin-right: 10px;
+  }
+
+  header .navbar .nav-item:nth-child(6) {
+    margin-right: 5px;
+  }
+
+  header .navbar .nav-item .nav-link {
+    font-size: 13px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 992px) {
   header {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -415,6 +445,16 @@ header .navbar-light .navbar-toggler:focus {
     -webkit-box-ordinal-group: 7 !important;
         -ms-flex-order: 6 !important;
             order: 6 !important;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 16px;
   }
 
 @supports (-webkit-appearance:none) {

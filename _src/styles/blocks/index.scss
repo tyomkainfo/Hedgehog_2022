@@ -2,20 +2,22 @@
 header {
   padding-top: 64px;
   padding-bottom: 64px;
-  @include max-screen(768px){
+  @include max-screen(992px){
     padding-top: 24px;
     padding-bottom: 24px;
   }
   .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
-
     .nav-item {
       margin-right: 44px;
       @include max-screen(1399px){
         margin-right: 20px;
       }
-      @include max-screen(768px){
+      @include max-screen(1199px){
+        margin-right: 12px;
+      }
+      @include max-screen(992px){
        margin-right: 0;
         padding-bottom: 19px;
         padding-left: 18px;
@@ -28,7 +30,10 @@ header {
         @include max-screen(1399px){
           margin-right: 32px;
         }
-        @include max-screen(768px){
+        @include max-screen(1199px){
+          margin-right: 10px;
+        }
+        @include max-screen(992px){
           margin-right: 0;
         }
       }
@@ -38,7 +43,10 @@ header {
         @include max-screen(1399px){
           margin-right: 20px;
         }
-        @include max-screen(768px){
+        @include max-screen(1199px){
+          margin-right: 5px;
+        }
+        @include max-screen(992px){
           margin-right: 0;
           border: none;
         }
@@ -46,7 +54,7 @@ header {
 
       &:last-of-type {
         margin-right: 0;
-        @include max-screen(768px){
+        @include max-screen(992px){
           border: none;
         }
       }
@@ -58,7 +66,10 @@ header {
         padding: 0 !important;
         line-height: 36px;
         transition: 0.3s;
-        @include max-screen(768px){
+        @include max-screen(1199px){
+          font-size: 13px;
+        }
+        @include max-screen(992px){
           font-size: 24px;
         }
         &:hover, &.active {
@@ -75,7 +86,7 @@ header {
     font-size: 36px;
     line-height: 36px;
     padding-top: 0;
-    @include max-screen(768px){
+    @include max-screen(992px){
       font-size: 31px;
       line-height: 31px;
     }
@@ -102,7 +113,7 @@ header {
     color: #333333;
     text-decoration: none;
     display: inline-block;
-    @include max-screen(768px){
+    @include max-screen(992px){
       font-size: 19px;
     }
   }
@@ -150,7 +161,7 @@ header {
     color: #2e8b6d;
     font-family: $main_fonts;
     font-weight: 500;
-    @include max-screen(768px){
+    @include max-screen(992px){
       font-size: 18px;
     }
     img{
@@ -231,7 +242,7 @@ header {
   }
 }
 .order-6{
-  @include max-screen(768px){
+  @include max-screen(992px){
     order: 6!important;
   }
 }
