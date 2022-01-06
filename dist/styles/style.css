@@ -639,6 +639,7 @@ header .navbar-light .navbar-toggler:focus {
   .main_block ul li:before {
     width: 8px;
     height: 8px;
+    margin-right: 9px;
   }
 
   .main_block .btn {
