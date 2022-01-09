@@ -733,6 +733,120 @@ header .navbar-light .navbar-toggler:focus {
   font-size: 23px;
 }
 
+/* experience */
+
+.experience {
+  background-color: #f4f9ff;
+  padding-top: 111px;
+  margin-bottom: 90px;
+}
+
+.experience h2 {
+  font-family: "Geometria";
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  text-align: center;
+  color: #252525;
+  margin-bottom: 70px;
+  display: inline-block;
+  position: relative;
+}
+
+.experience h2:before {
+  position: absolute;
+  width: 163px;
+  height: 117px;
+  background-image: url("../images/arrow_exp.png");
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  left: -189px;
+  top: -11px;
+}
+
+.facts {
+  padding-bottom: 150px;
+}
+
+.facts h2 {
+  font-family: "Geometria";
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 114px;
+  color: #252525;
+  margin-bottom: 70px;
+  position: relative;
+  width: auto;
+  background-size: inherit;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url("../images/focus_h2.png");
+  height: 114px;
+  text-align: left;
+  padding-right: 44px;
+  display: inline-block;
+}
+
+.facts .facts__item img {
+  margin-bottom: 60px;
+}
+
+.facts .facts__item p {
+  font-family: "Geometria";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  color: #525252;
+  text-align: left;
+}
+
+.facts .facts__item p span {
+  font-weight: bold;
+  color: #448a72;
+}
+
+.facts .btn {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Geometria";
+  font-weight: 500;
+  background-color: #2e8b6d;
+  border-radius: 55px;
+  line-height: 89px;
+  padding: 0 75px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: solid 2px transparent;
+  margin-bottom: 70px;
+}
+
+.facts .btn:hover {
+  border: solid 2px #2e8b6d;
+  background-color: white;
+  color: #2e8b6d;
+  -webkit-box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
+          box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
+}
+
+/* our_cases */
+
+.our_cases {
+  padding-bottom: 94px;
+}
+
+.our_cases h2 {
+  font-family: "Geometria";
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  color: #252525;
+  margin-bottom: 77px;
+  position: relative;
+  text-align: center;
+}
+
 @supports (-webkit-appearance:none) {
   .main_block h1 {
     background-image: url("../images/bg_h1.webp");
@@ -752,6 +866,14 @@ header .navbar-light .navbar-toggler:focus {
 
   .service h2:after {
     background-image: url("../images/arrow_service.webp");
+  }
+
+  .experience h2:before {
+    background-image: url("../images/arrow_exp.webp");
+  }
+
+  .facts h2 {
+    background-image: url("../images/focus_h2.webp");
   }
 }
 
@@ -806,6 +928,10 @@ header .navbar-light .navbar-toggler:focus {
 
   header .navbar .nav-item .nav-link {
     font-size: 13px;
+  }
+
+  .who_me h2 {
+    font-size: 50px;
   }
 
 @supports (-webkit-appearance:none) {
@@ -938,6 +1064,10 @@ header .navbar-light .navbar-toggler:focus {
     left: 28%;
   }
 
+  .our_task h2:before {
+    display: none;
+  }
+
   .our_task p {
     font-size: 16px;
     line-height: 26px;
@@ -1058,8 +1188,71 @@ header .navbar-light .navbar-toggler:focus {
     padding-top: 24px;
   }
 
-@supports (-webkit-appearance:none) {
+  .experience {
+    padding-top: 60px;
+    margin-bottom: 50px;
+    background-image: url("../images/map_mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 270px;
+  }
 
+  .experience h2 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .experience h2:before {
+    width: 111px;
+    height: 81px;
+    background-size: contain;
+    left: -20px;
+    top: -30px;
+  }
+
+  .facts {
+    padding-bottom: 50px;
+  }
+
+  .facts h2 {
+    font-size: 30px;
+    line-height: 60px;
+    width: auto;
+    max-width: 100%;
+    height: 60px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    padding-right: 18px;
+    background-size: contain;
+    margin-bottom: 15px;
+  }
+
+  .facts .facts__item p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+
+  .facts .btn {
+    margin: auto;
+    display: block;
+    max-width: 270px;
+    line-height: 78px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .our_cases h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+@supports (-webkit-appearance:none) {
+    .experience {
+      background-image: url("../images/map_mob.webp");
+    }
 }
 }
 
@@ -1077,6 +1270,46 @@ header .navbar-light .navbar-toggler:focus {
   .our_task h2:before {
     top: 15px;
     left: 10px;
+    display: block;
+  }
+
+  .facts .facts__item img {
+    margin-bottom: 30px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 574px) {
+  .experience h2:before {
+    width: 111px;
+    height: 81px;
+    background-size: contain;
+    left: 0;
+    top: -30px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 390px) {
+  .facts h2 {
+    font-size: 23px;
+    padding-right: 45px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 376px) {
+  .experience {
+    padding-bottom: 240px;
   }
 
 @supports (-webkit-appearance:none) {

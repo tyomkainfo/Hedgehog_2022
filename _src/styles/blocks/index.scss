@@ -460,10 +460,16 @@ header {
         left: 28%;
       }
     }
+    @include max-screen(992px) {
+      &:before {
+        display: none;
+      }
+    }
     @include max-screen(575px) {
       &:before {
         top: 15px;
         left: 10px;
+        display: block;
       }
     }
     @include max-screen(375px) {
@@ -551,6 +557,9 @@ header {
     background-size: cover;
     width: 285px;
     height: 107px;
+    @include max-screen(1199px) {
+      font-size: 50px;
+    }
     @include max-screen(992px) {
       font-size: 32px;
       line-height: 60px;
@@ -782,6 +791,183 @@ header {
         display: inline-block;
         font-size: 23px;
       }
+    }
+  }
+}
+
+/* experience */
+
+.experience{
+  background-color: #f4f9ff;
+  padding-top: 111px;
+  margin-bottom: 90px;
+  @include max-screen(992px) {
+    padding-top: 60px;
+    margin-bottom: 50px;
+    background-image: url("../images/map_mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    //background-size: contain;
+    padding-bottom: 270px;
+  }
+  @include max-screen(376px) {
+    padding-bottom: 240px;
+  }
+  h2{
+    font-family: $main_fonts;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 70px;
+    display: inline-block;
+    position: relative;
+    @include max-screen(992px) {
+      font-size: 32px;
+      line-height: 37px;
+    }
+    &:before{
+      position: absolute;
+      width: 163px;
+      height: 117px;
+      background-image: url("../images/arrow_exp.png");
+      background-repeat: no-repeat;
+      content: "";
+      display: block;
+      left: -189px;
+      top: -11px;
+      @include max-screen(992px) {
+        width: 111px;
+        height: 81px;
+        background-size: contain;
+        left: -20px;
+        top: -30px;
+      }
+      @include max-screen(574px) {
+        width: 111px;
+        height: 81px;
+        background-size: contain;
+        left: 0;
+        top: -30px;
+      }
+    }
+  }
+}
+
+.facts{
+  padding-bottom: 150px;
+  @include max-screen(992px) {
+    padding-bottom: 50px;
+  }
+  h2{
+    font-family: $main_fonts;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 114px;
+    color: #252525;
+    margin-bottom: 70px;
+    position: relative;
+    width: auto;
+    background-size: inherit;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url("../images/focus_h2.png");
+    height: 114px;
+    text-align: left;
+    padding-right: 44px;
+    display: inline-block;
+    @include max-screen(992px) {
+      font-size: 30px;
+      line-height: 60px;
+      width: auto;
+      max-width: 100%;
+      height: 60px;
+      margin: auto;
+      display: inline-block;
+      text-align: center;
+      padding-right: 18px;
+      background-size: contain;
+      margin-bottom: 15px;
+    }
+    @include max-screen(390px) {
+      font-size: 23px;
+      padding-right: 45px;
+    }
+  }
+  .facts__item{
+    img{
+      margin-bottom: 60px;
+      @include max-screen(575px) {
+        margin-bottom: 30px;
+      }
+    }
+    p{
+      font-family: $main_fonts;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 34px;
+      color: #525252;
+      text-align: left;
+      @include max-screen(992px) {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 50px;
+      }
+      span{
+        font-weight: bold;
+        color: #448a72;
+      }
+    }
+  }
+  .btn {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: $main_fonts;
+    font-weight: 500;
+    background-color: #2e8b6d;
+    border-radius: 55px;
+    line-height: 89px;
+    padding: 0 75px;
+    transition: 0.3s;
+    border: solid 2px transparent;
+    margin-bottom: 70px;
+
+    &:hover {
+      border: solid 2px #2e8b6d;
+      background-color: white;
+      color: #2e8b6d;
+      box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
+    }
+
+    @include max-screen(992px) {
+      margin: auto;
+      display: block;
+      max-width: 270px;
+      line-height: 78px;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* our_cases */
+
+.our_cases{
+  padding-bottom: 94px;
+  h2{
+    font-family: $main_fonts;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    color: #252525;
+    margin-bottom: 77px;
+    position: relative;
+    text-align: center;
+    @include max-screen(992px) {
+      font-size: 32px;
+      line-height: 32px;
     }
   }
 }
