@@ -846,7 +846,7 @@ header .navbar-light .navbar-toggler:focus {
 .our_cases .col-6,
 .our_cases .col-12 {
   padding: 0 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .our_cases .keise {
@@ -1017,6 +1017,74 @@ footer {
   padding-top: 80px;
 }
 
+footer .navbar-brand {
+  font-family: "Geometria";
+  font-weight: bold;
+  color: white;
+  font-size: 38px;
+  line-height: 38px;
+  padding-top: 0;
+  margin: 0;
+  margin-bottom: 76px;
+  display: inline-block;
+}
+
+footer .navbar-brand span {
+  color: #34ae87;
+}
+
+footer h3 {
+  font-family: "Geometria";
+  font-weight: bold;
+  color: white;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+footer .row.align-content-lg-end.align-items-lg-end {
+  padding-bottom: 53px;
+}
+
+footer .soc_set {
+  font-family: "Geometria";
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 24px;
+  line-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .soc_set i {
+  margin-right: 19px;
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+}
+
+footer .green_line {
+  background-color: #2e8b6d;
+  padding: 44px 0;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 18px;
+  font-family: "Geometria";
+  font-weight: 400;
+}
+
+.title-error {
+  text-align: center;
+  font-size: 222px;
+  color: #2e8b6d;
+}
+
 @supports (-webkit-appearance:none) {
   .main_block h1 {
     background-image: url("../images/bg_h1.webp");
@@ -1162,6 +1230,10 @@ footer {
 
   .who_me h2 {
     font-size: 50px;
+  }
+
+  .our_cases .keise {
+    height: 160px;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1484,16 +1556,16 @@ footer {
   }
 
   .our_cases .mb_60 {
-    height: 60px;
+    margin-bottom: 60px;
   }
 
   .last_section {
-    height: 60px;
+    padding-bottom: 60px;
   }
 
   .last_section h3 {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 34px;
     margin-bottom: 25px;
   }
 
@@ -1505,15 +1577,53 @@ footer {
     width: 72px;
     height: 100px;
     background-size: contain;
-    left: -49px;
-    top: -16px;
+    left: -10px;
+    top: -24px;
   }
 
   .last_section .btn {
     min-width: 178px;
     line-height: 60px;
-    padding: 0 22px;
+    padding: 0 7px;
     text-align: center;
+  }
+
+  footer .navbar-brand {
+    font-size: 31px;
+    line-height: 31px;
+    margin-bottom: 31px;
+    text-align: center;
+  }
+
+  footer h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  footer .row.align-content-lg-end.align-items-lg-end {
+    padding-bottom: 20px;
+  }
+
+  footer .soc_set {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+
+  footer .soc_set i {
+    font-size: 25px;
+    margin-right: 14px;
+  }
+
+  footer .green_line {
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .title-error {
+    font-size: 50px;
   }
 
 @supports (-webkit-appearance:none) {
