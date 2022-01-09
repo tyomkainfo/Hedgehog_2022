@@ -861,77 +861,77 @@ header .navbar-light .navbar-toggler:focus {
 }
 
 .our_cases .keise.keise_1 {
-  background-image: url("../../images/keise_1.png");
+  background-image: url("../images/keise_1.png");
 }
 
 .our_cases .keise.keise_1:hover {
-  background-image: url("../../images/keise_1_hov.png");
+  background-image: url("../images/keise_1_hov.png");
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .our_cases .keise.keise_2 {
-  background-image: url("../../images/keise_2.png");
+  background-image: url("../images/keise_2.png");
 }
 
 .our_cases .keise.keise_2:hover {
-  background-image: url("../../images/keise_2_hov.png");
+  background-image: url("../images/keise_2_hov.png");
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .our_cases .keise.keise_3 {
-  background-image: url("../../images/keise_3.png");
+  background-image: url("../images/keise_3.png");
 }
 
 .our_cases .keise.keise_3:hover {
-  background-image: url("../../images/keise_3_hov.png");
+  background-image: url("../images/keise_3_hov.png");
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .our_cases .keise.keise_4 {
-  background-image: url("../../images/keise_4.png");
+  background-image: url("../images/keise_4.png");
 }
 
 .our_cases .keise.keise_4:hover {
-  background-image: url("../../images/keise_4_hov.png");
+  background-image: url("../images/keise_4_hov.png");
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .our_cases .keise.keise_5 {
-  background-image: url("../../images/keise_5.png");
+  background-image: url("../images/keise_5.png");
 }
 
 .our_cases .keise.keise_5:hover {
-  background-image: url("../../images/keise_5_hov.png");
+  background-image: url("../images/keise_5_hov.png");
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .our_cases .keise.keise_6 {
-  background-image: url("../../images/keise_6.png");
+  background-image: url("../images/keise_6.png");
 }
 
 .our_cases .keise.keise_6:hover {
-  background-image: url("../../images/keise_6_hov.png");
+  background-image: url("../images/keise_6_hov.png");
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .our_cases .keise.keise_7 {
-  background-image: url("../../images/keise_7.png");
+  background-image: url("../images/keise_7.png");
 }
 
 .our_cases .keise.keise_7:hover {
-  background-image: url("../../images/keise_7_hov.png");
+  background-image: url("../images/keise_7_hov.png");
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -1047,59 +1047,59 @@ footer {
   }
 
   .our_cases .keise.keise_1 {
-    background-image: url("../../images/keise_1.webp");
+    background-image: url("../images/keise_1.webp");
   }
 
   .our_cases .keise.keise_1:hover {
-    background-image: url("../../images/keise_1_hov.webp");
+    background-image: url("../images/keise_1_hov.webp");
   }
 
   .our_cases .keise.keise_2 {
-    background-image: url("../../images/keise_2.webp");
+    background-image: url("../images/keise_2.webp");
   }
 
   .our_cases .keise.keise_2:hover {
-    background-image: url("../../images/keise_2_hov.webp");
+    background-image: url("../images/keise_2_hov.webp");
   }
 
   .our_cases .keise.keise_3 {
-    background-image: url("../../images/keise_3.webp");
+    background-image: url("../images/keise_3.webp");
   }
 
   .our_cases .keise.keise_3:hover {
-    background-image: url("../../images/keise_3_hov.webp");
+    background-image: url("../images/keise_3_hov.webp");
   }
 
   .our_cases .keise.keise_4 {
-    background-image: url("../../images/keise_4.webp");
+    background-image: url("../images/keise_4.webp");
   }
 
   .our_cases .keise.keise_4:hover {
-    background-image: url("../../images/keise_4_hov.webp");
+    background-image: url("../images/keise_4_hov.webp");
   }
 
   .our_cases .keise.keise_5 {
-    background-image: url("../../images/keise_5.webp");
+    background-image: url("../images/keise_5.webp");
   }
 
   .our_cases .keise.keise_5:hover {
-    background-image: url("../../images/keise_5_hov.webp");
+    background-image: url("../images/keise_5_hov.webp");
   }
 
   .our_cases .keise.keise_6 {
-    background-image: url("../../images/keise_6.webp");
+    background-image: url("../images/keise_6.webp");
   }
 
   .our_cases .keise.keise_6:hover {
-    background-image: url("../../images/keise_6_hov.webp");
+    background-image: url("../images/keise_6_hov.webp");
   }
 
   .our_cases .keise.keise_7 {
-    background-image: url("../../images/keise_7.webp");
+    background-image: url("../images/keise_7.webp");
   }
 
   .our_cases .keise.keise_7:hover {
-    background-image: url("../../images/keise_7_hov.webp");
+    background-image: url("../images/keise_7_hov.webp");
   }
 
   .last_section h3:before {
