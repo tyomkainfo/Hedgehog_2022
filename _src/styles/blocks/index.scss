@@ -153,6 +153,7 @@ header {
     display: inline-block;
     background-color: rgba(46, 139, 109, 0.8);
     width: 100%;
+    color: white;
   }
 
   .btn {
@@ -400,6 +401,8 @@ header {
     border-radius: 50px;
     text-align: center;
     line-height: 65px;
+    animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+    position: relative;
   }
 
   @include max-screen(992px) {
@@ -487,6 +490,297 @@ header {
       line-height: 26px;
       br {
         display: none;
+      }
+    }
+  }
+}
+
+/* who_me */
+
+.who_me{
+  padding: 70px 0;
+  @include max-screen(992px) {
+    padding: 30px 0;
+  }
+  &.focus_me{
+    padding: 0px 0 70px;
+    @include max-screen(992px) {
+      padding: 0px 0 30px;
+    }
+    h2{
+      width: auto;
+      background-size: inherit;
+      background-position: right;
+      background-image: url("../images/focus_h2.png");
+      height: 114px;
+      text-align: left;
+      padding-right: 35px;
+      display: inline-block;
+      @include max-screen(992px) {
+        font-size: 32px;
+        line-height: 60px;
+        width: 100%;
+        max-width: 316px;
+        height: 60px;
+        margin: auto;
+        display: block;
+        padding-right: 0;
+        background-size: contain;
+        margin-bottom: 22px;
+      }
+    }
+    p{
+      @include max-screen(992px) {
+        margin-bottom: 20px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  h2{
+    font-family: $main_fonts;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 107px;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 22px;
+    background-image: url("../images/bg_h2_who.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 285px;
+    height: 107px;
+    @include max-screen(992px) {
+      font-size: 32px;
+      line-height: 60px;
+      width: 159px;
+      height: 60px;
+      margin: auto;
+      margin-bottom: 22px;
+    }
+  }
+  p {
+    font-family: $main_fonts;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 39px;
+    color: #525252;
+    margin-bottom: 50px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    @include max-screen(992px) {
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.service{
+  padding: 70px 0;
+  @include max-screen(992px) {
+    padding: 30px 0;
+  }
+  h2 {
+    font-family: $main_fonts;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    color: #252525;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 60px;
+    &:after {
+      content: "";
+      display: inline-block;
+      background-image: url("../images/arrow_service.png");
+      background-repeat: no-repeat;
+      width: 141px;
+      height: 101px;
+      position: absolute;
+      right: -172px;
+      top: 7px;
+    }
+
+    @include max-screen(992px) {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 25px;
+      &:after {
+        width: 72px;
+        height: 100px;
+        background-size: contain;
+        right: -49px;
+        top: -16px;
+      }
+    }
+    @include max-screen(575px) {
+
+    }
+    @include max-screen(375px) {
+
+    }
+  }
+
+  p {
+    font-family: $main_fonts;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #525252;
+    margin-bottom: 80px;
+    @include max-screen(992px) {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 35px;
+    }
+  }
+  .col-6{
+    margin-bottom: 1.5rem;
+    @include max-screen(992px) {
+      padding: 0 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .item_1{
+    background-color: #f1f5fa;
+    height: 277px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    @include max-screen(992px) {
+      height: 125px;
+      img{
+        width: 43px;
+      }
+    }
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: 0 20px 20px rgba(0,0,0,0.1)
+    }
+    &.item_2{
+      background-color: #f2f9fb;
+    }
+    &.item_3{
+      background-color: #f1faf6;
+    }
+    &.item_4{
+      background-color: #eff2fa;
+    }
+    &.item_5{
+      background-color: #fbf9f1;
+    }
+    &.item_6{
+      background-color: #faf6f2;
+    }
+    p{
+      width: 100%;
+      padding-top: 28px;
+      text-transform: uppercase;
+      font-family: $main_fonts;
+      font-weight: bold;
+      color: #252525;
+      font-size: 17px;
+      line-height: 27px;
+      margin-bottom: 0;
+      @include max-screen(992px) {
+        font-size: 9px;
+        line-height: 14px;
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+/* benefits */
+
+.benefits{
+  padding: 70px 0;
+  @include max-screen(992px) {
+    padding: 30px 0;
+  }
+  h2{
+    font-family: $main_fonts;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 70px;
+    @include max-screen(992px) {
+      font-size: 32px;
+      line-height: 60px;
+    }
+  }
+  .owl-carousel.owl-carousel_2{
+    display: flex;
+    justify-content: center;
+  }
+  .item{
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    @include max-screen(992px) {
+      height: 200px;
+      img{
+        width: 110px;
+      }
+    }
+    p{
+      width: 100%;
+      padding-top: 50px;
+      text-transform: uppercase;
+      font-family: $main_fonts;
+      font-weight: bold;
+      color: #252525;
+      font-size: 22px;
+      line-height: 38px;
+      margin-bottom: 0;
+      @include max-screen(992px) {
+        font-size: 15px;
+        line-height: 26px;
+        padding-top: 24px;
+      }
+    }
+  }
+  .owl-nav{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    .owl-prev{
+      position: absolute;
+      left: 30px;
+      &:after{
+        content: "\f053";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        font-size: 23px;
+      }
+    }
+    .owl-next{
+      position: absolute;
+      right: 30px;
+      &:after{
+        content: "\f054";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        font-size: 23px;
       }
     }
   }

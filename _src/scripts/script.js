@@ -28,7 +28,7 @@ $(document).ready(function () {
 
             responsive: {
                 0: {
-                    items: 1.1
+                    items: 1
                 },
 
                 1000: {

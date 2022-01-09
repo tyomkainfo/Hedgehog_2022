@@ -47,6 +47,7 @@ a:hover {
 
 body {
   background-color: white;
+  overflow-x: hidden;
 }
 
 hr {
@@ -213,6 +214,7 @@ header .language .sub_menu li a {
   display: inline-block;
   background-color: rgba(46, 139, 109, 0.8);
   width: 100%;
+  color: white;
 }
 
 header .btn {
@@ -440,6 +442,9 @@ header .navbar-light .navbar-toggler:focus {
   border-radius: 50px;
   text-align: center;
   line-height: 65px;
+  -webkit-animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+          animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+  position: relative;
 }
 
 /* our_task */
@@ -485,6 +490,249 @@ header .navbar-light .navbar-toggler:focus {
   color: #525252;
 }
 
+/* who_me */
+
+.who_me {
+  padding: 70px 0;
+}
+
+.who_me.focus_me {
+  padding: 0px 0 70px;
+}
+
+.who_me.focus_me h2 {
+  width: auto;
+  background-size: inherit;
+  background-position: right;
+  background-image: url("../images/focus_h2.png");
+  height: 114px;
+  text-align: left;
+  padding-right: 35px;
+  display: inline-block;
+}
+
+.who_me h2 {
+  font-family: "Geometria";
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 107px;
+  text-align: center;
+  color: #252525;
+  margin-bottom: 22px;
+  background-image: url("../images/bg_h2_who.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 285px;
+  height: 107px;
+}
+
+.who_me p {
+  font-family: "Geometria";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 39px;
+  color: #525252;
+  margin-bottom: 50px;
+}
+
+.who_me p:last-of-type {
+  margin-bottom: 0;
+}
+
+.service {
+  padding: 70px 0;
+}
+
+.service h2 {
+  font-family: "Geometria";
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  color: #252525;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.service h2:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow_service.png");
+  background-repeat: no-repeat;
+  width: 141px;
+  height: 101px;
+  position: absolute;
+  right: -172px;
+  top: 7px;
+}
+
+.service p {
+  font-family: "Geometria";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #525252;
+  margin-bottom: 80px;
+}
+
+.service .col-6 {
+  margin-bottom: 1.5rem;
+}
+
+.service .item_1 {
+  background-color: #f1f5fa;
+  height: 277px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.service .item_1:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service .item_1.item_2 {
+  background-color: #f2f9fb;
+}
+
+.service .item_1.item_3 {
+  background-color: #f1faf6;
+}
+
+.service .item_1.item_4 {
+  background-color: #eff2fa;
+}
+
+.service .item_1.item_5 {
+  background-color: #fbf9f1;
+}
+
+.service .item_1.item_6 {
+  background-color: #faf6f2;
+}
+
+.service .item_1 p {
+  width: 100%;
+  padding-top: 28px;
+  text-transform: uppercase;
+  font-family: "Geometria";
+  font-weight: bold;
+  color: #252525;
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 0;
+}
+
+/* benefits */
+
+.benefits {
+  padding: 70px 0;
+}
+
+.benefits h2 {
+  font-family: "Geometria";
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  text-align: center;
+  color: #252525;
+  margin-bottom: 70px;
+}
+
+.benefits .owl-carousel.owl-carousel_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits .item {
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.benefits .item p {
+  width: 100%;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-family: "Geometria";
+  font-weight: bold;
+  color: #252525;
+  font-size: 22px;
+  line-height: 38px;
+  margin-bottom: 0;
+}
+
+.benefits .owl-nav {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+.benefits .owl-nav .owl-prev {
+  position: absolute;
+  left: 30px;
+}
+
+.benefits .owl-nav .owl-prev:after {
+  content: "\f053";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-size: 23px;
+}
+
+.benefits .owl-nav .owl-next {
+  position: absolute;
+  right: 30px;
+}
+
+.benefits .owl-nav .owl-next:after {
+  content: "\f054";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-size: 23px;
+}
+
 @supports (-webkit-appearance:none) {
   .main_block h1 {
     background-image: url("../images/bg_h1.webp");
@@ -492,6 +740,18 @@ header .navbar-light .navbar-toggler:focus {
 
   .our_task h2:before {
     background-image: url("../images/arrow_block_2.webp");
+  }
+
+  .who_me.focus_me h2 {
+    background-image: url("../images/focus_h2.webp");
+  }
+
+  .who_me h2 {
+    background-image: url("../images/bg_h2_who.webp");
+  }
+
+  .service h2:after {
+    background-image: url("../images/arrow_service.webp");
   }
 }
 
@@ -685,6 +945,117 @@ header .navbar-light .navbar-toggler:focus {
 
   .our_task p br {
     display: none;
+  }
+
+  .who_me {
+    padding: 30px 0;
+  }
+
+  .who_me.focus_me {
+    padding: 0px 0 30px;
+  }
+
+  .who_me.focus_me h2 {
+    font-size: 32px;
+    line-height: 60px;
+    width: 100%;
+    max-width: 316px;
+    height: 60px;
+    margin: auto;
+    display: block;
+    padding-right: 0;
+    background-size: contain;
+    margin-bottom: 22px;
+  }
+
+  .who_me.focus_me p {
+    margin-bottom: 20px;
+  }
+
+  .who_me.focus_me p br {
+    display: none;
+  }
+
+  .who_me h2 {
+    font-size: 32px;
+    line-height: 60px;
+    width: 159px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 22px;
+  }
+
+  .who_me p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .service {
+    padding: 30px 0;
+  }
+
+  .service h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+
+  .service h2:after {
+    width: 72px;
+    height: 100px;
+    background-size: contain;
+    right: -49px;
+    top: -16px;
+  }
+
+  .service p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 35px;
+  }
+
+  .service .col-6 {
+    padding: 0 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service .item_1 {
+    height: 125px;
+  }
+
+  .service .item_1 img {
+    width: 43px;
+  }
+
+  .service .item_1 p {
+    font-size: 9px;
+    line-height: 14px;
+    padding-top: 15px;
+  }
+
+  .benefits {
+    padding: 30px 0;
+  }
+
+  .benefits h2 {
+    font-size: 32px;
+    line-height: 60px;
+  }
+
+  .benefits .item {
+    height: 200px;
+  }
+
+  .benefits .item img {
+    width: 110px;
+  }
+
+  .benefits .item p {
+    font-size: 15px;
+    line-height: 26px;
+    padding-top: 24px;
   }
 
 @supports (-webkit-appearance:none) {
