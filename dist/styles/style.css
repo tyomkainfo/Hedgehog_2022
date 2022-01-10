@@ -387,8 +387,8 @@ header .navbar-light .navbar-toggler:focus {
 
 .main_block ul li {
   font-family: "Geometria";
-  font-size: 24px;
-  line-height: 46px;
+  font-size: 18px;
+  line-height: 36px;
   font-weight: 500;
   color: #525252;
   display: -webkit-box;
@@ -417,7 +417,7 @@ header .navbar-light .navbar-toggler:focus {
   font-weight: 500;
   background-color: #2e8b6d;
   border-radius: 55px;
-  line-height: 89px;
+  line-height: 69px;
   padding: 0 75px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -503,8 +503,8 @@ header .navbar-light .navbar-toggler:focus {
 .our_task p {
   font-family: "Geometria";
   font-weight: 500;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 30px;
   text-align: center;
   color: #525252;
 }
@@ -521,7 +521,7 @@ header .navbar-light .navbar-toggler:focus {
 
 .who_me.focus_me h2 {
   width: auto;
-  background-size: inherit;
+  background-size: contain;
   background-position: right;
   background-image: url("../images/focus_h2.png");
   height: 114px;
@@ -548,8 +548,8 @@ header .navbar-light .navbar-toggler:focus {
 .who_me p {
   font-family: "Geometria";
   font-weight: 500;
-  font-size: 22px;
-  line-height: 39px;
+  font-size: 18px;
+  line-height: 29px;
   color: #525252;
   margin-bottom: 50px;
 }
@@ -589,8 +589,8 @@ header .navbar-light .navbar-toggler:focus {
 .service p {
   font-family: "Geometria";
   font-weight: 500;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 30px;
   text-align: center;
   color: #525252;
   margin-bottom: 80px;
@@ -657,8 +657,8 @@ header .navbar-light .navbar-toggler:focus {
   font-family: "Geometria";
   font-weight: bold;
   color: #252525;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 15px;
+  line-height: 25px;
   margin-bottom: 0;
 }
 
@@ -715,8 +715,8 @@ header .navbar-light .navbar-toggler:focus {
   font-family: "Geometria";
   font-weight: bold;
   color: #252525;
-  font-size: 22px;
-  line-height: 38px;
+  font-size: 15px;
+  line-height: 25px;
   margin-bottom: 0;
 }
 
@@ -814,8 +814,8 @@ header .navbar-light .navbar-toggler:focus {
 .facts .facts__item p {
   font-family: "Geometria";
   font-weight: 500;
-  font-size: 18px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 30px;
   color: #525252;
   text-align: left;
 }
@@ -832,7 +832,7 @@ header .navbar-light .navbar-toggler:focus {
   font-weight: 500;
   background-color: #2e8b6d;
   border-radius: 55px;
-  line-height: 89px;
+  line-height: 69px;
   padding: 0 75px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1000,7 +1000,7 @@ header .navbar-light .navbar-toggler:focus {
   font-weight: 500;
   background-color: #2e8b6d;
   border-radius: 55px;
-  line-height: 89px;
+  line-height: 69px;
   padding: 0 45px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1059,8 +1059,8 @@ footer h3 {
   font-family: "Geometria";
   font-weight: bold;
   color: white;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 footer .row.align-content-lg-end.align-items-lg-end {
@@ -1071,9 +1071,9 @@ footer .soc_set {
   font-family: "Geometria";
   font-weight: 500;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 24px;
-  line-height: 32px;
+  line-height: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1087,7 +1087,7 @@ footer .soc_set {
 footer .soc_set i {
   margin-right: 19px;
   color: white;
-  font-size: 32px;
+  font-size: 27px;
   display: inline-block;
 }
 
@@ -1105,6 +1105,10 @@ footer .green_line {
   text-align: center;
   font-size: 222px;
   color: #2e8b6d;
+}
+
+.navbar-brand img {
+  width: 180px;
 }
 
 @supports (-webkit-appearance:none) {
@@ -1208,6 +1212,63 @@ footer .green_line {
     -webkit-box-ordinal-group: 8 !important;
         -ms-flex-order: 7 !important;
             order: 7 !important;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 1400px) {
+  .main_block h1 {
+    font-size: 29px;
+    line-height: 39px;
+    background-position: -50px 27px;
+  }
+
+  .our_task h2 {
+    font-size: 29px;
+  }
+
+  .who_me.focus_me h2 {
+    background-size: 44%;
+    padding-right: 31px;
+  }
+
+  .who_me h2 {
+    font-size: 29px;
+  }
+
+  .service h2 {
+    font-size: 29px;
+  }
+
+  .benefits h2 {
+    font-size: 29px;
+  }
+
+  .experience h2 {
+    font-size: 29px;
+  }
+
+  .facts h2 {
+    font-size: 29px;
+    background-size: 37%;
+    padding-right: 37px;
+  }
+
+  .our_cases h2 {
+    font-size: 29px;
+    line-height: 29px;
+  }
+
+  .last_section h3 {
+    font-size: 29px;
+    line-height: 34px;
+  }
+
+  .last_section h3:before {
+    left: -107px;
   }
 
 @supports (-webkit-appearance:none) {

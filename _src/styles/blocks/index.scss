@@ -318,6 +318,11 @@ header {
     position: relative;
     width: 500px;
     z-index: 2;
+    @include max-screen(1400px) {
+      font-size: 29px;
+      line-height: 39px;
+      background-position: -50px 27px;
+    }
     @include max-screen(992px) {
       margin-bottom: 34px;
       padding-top: 0;
@@ -339,8 +344,8 @@ header {
 
     li {
       font-family: $main_fonts;
-      font-size: 24px;
-      line-height: 46px;
+      font-size: 18px;
+      line-height: 36px;
       font-weight: 500;
       color: #525252;
       display: flex;
@@ -379,7 +384,7 @@ header {
     font-weight: 500;
     background-color: #2e8b6d;
     border-radius: 55px;
-    line-height: 89px;
+    line-height: 69px;
     padding: 0 75px;
     transition: 0.3s;
     border: solid 2px transparent;
@@ -452,7 +457,10 @@ header {
     line-height: 56px;
     color: #252525;
     text-align: center;
-
+    @include max-screen(1400px) {
+      font-size: 29px;
+      //line-height: 29px;
+    }
     &:before {
       content: "";
       display: inline-block;
@@ -519,8 +527,8 @@ header {
   p {
     font-family: $main_fonts;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
     color: #525252;
     @include max-screen(992px) {
@@ -549,13 +557,17 @@ header {
 
     h2 {
       width: auto;
-      background-size: inherit;
+      background-size: contain;
       background-position: right;
       background-image: url("../images/focus_h2.png");
       height: 114px;
       text-align: left;
       padding-right: 35px;
       display: inline-block;
+      @include max-screen(1400px) {
+        background-size: 44%;
+        padding-right: 31px;
+      }
       @include max-screen(992px) {
         font-size: 32px;
         line-height: 60px;
@@ -593,6 +605,10 @@ header {
     background-size: cover;
     width: 285px;
     height: 107px;
+    @include max-screen(1400px) {
+      font-size: 29px;
+      //line-height: 39px;
+    }
     @include max-screen(1199px) {
       font-size: 50px;
     }
@@ -609,8 +625,8 @@ header {
   p {
     font-family: $main_fonts;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 39px;
+    font-size: 18px;
+    line-height: 29px;
     color: #525252;
     margin-bottom: 50px;
 
@@ -643,7 +659,10 @@ header {
     position: relative;
     display: inline-block;
     margin-bottom: 60px;
-
+    @include max-screen(1400px) {
+      font-size: 29px;
+      //line-height: 39px;
+    }
     &:after {
       content: "";
       display: inline-block;
@@ -679,8 +698,8 @@ header {
   p {
     font-family: $main_fonts;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
     color: #525252;
     margin-bottom: 80px;
@@ -748,8 +767,8 @@ header {
       font-family: $main_fonts;
       font-weight: bold;
       color: #252525;
-      font-size: 17px;
-      line-height: 27px;
+      font-size: 15px;
+      line-height: 25px;
       margin-bottom: 0;
       @include max-screen(992px) {
         font-size: 9px;
@@ -776,6 +795,10 @@ header {
     text-align: center;
     color: #252525;
     margin-bottom: 70px;
+    @include max-screen(1400px) {
+      font-size: 29px;
+      //line-height: 39px;
+    }
     @include max-screen(992px) {
       font-size: 32px;
       line-height: 60px;
@@ -810,8 +833,8 @@ header {
       font-family: $main_fonts;
       font-weight: bold;
       color: #252525;
-      font-size: 22px;
-      line-height: 38px;
+      font-size: 15px;
+      line-height: 25px;
       margin-bottom: 0;
       @include max-screen(992px) {
         font-size: 15px;
@@ -883,6 +906,10 @@ header {
     margin-bottom: 70px;
     display: inline-block;
     position: relative;
+    @include max-screen(1400px) {
+      font-size: 29px;
+      //line-height: 39px;
+    }
     @include max-screen(992px) {
       font-size: 32px;
       line-height: 37px;
@@ -939,6 +966,12 @@ header {
     text-align: left;
     padding-right: 44px;
     display: inline-block;
+    @include max-screen(1400px) {
+      font-size: 29px;
+      //line-height: 39px;
+      background-size: 37%;
+      padding-right: 37px;
+    }
     @include max-screen(992px) {
       font-size: 30px;
       line-height: 60px;
@@ -969,8 +1002,8 @@ header {
     p {
       font-family: $main_fonts;
       font-weight: 500;
-      font-size: 18px;
-      line-height: 34px;
+      font-size: 16px;
+      line-height: 30px;
       color: #525252;
       text-align: left;
       @include max-screen(992px) {
@@ -993,7 +1026,7 @@ header {
     font-weight: 500;
     background-color: #2e8b6d;
     border-radius: 55px;
-    line-height: 89px;
+    line-height: 69px;
     padding: 0 75px;
     transition: 0.3s;
     border: solid 2px transparent;
@@ -1030,6 +1063,10 @@ header {
     margin-bottom: 77px;
     position: relative;
     text-align: center;
+    @include max-screen(1400px) {
+      font-size: 29px;
+      line-height: 29px;
+    }
     @include max-screen(992px) {
       font-size: 32px;
       line-height: 32px;
@@ -1144,7 +1181,10 @@ header {
     position: relative;
     display: inline-block;
     margin-bottom: 60px;
-
+    @include max-screen(1400px) {
+      font-size: 29px;
+      line-height: 34px;
+    }
     &:before {
       content: "";
       display: inline-block;
@@ -1155,6 +1195,9 @@ header {
       position: absolute;
       left: -87px;
       top: -23px;
+      @include max-screen(1400px) {
+        left: -107px;
+      }
     }
 
     span {
@@ -1185,7 +1228,7 @@ header {
     font-weight: 500;
     background-color: #2e8b6d;
     border-radius: 55px;
-    line-height: 89px;
+    line-height: 69px;
     padding: 0 45px;
     transition: 0.3s;
     border: solid 2px transparent;
@@ -1266,8 +1309,8 @@ footer {
     font-family: $main_fonts;
     font-weight: bold;
     color: white;
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 32px;
     @include max-screen(992px) {
       font-size: 24px;
       line-height: 28px;
@@ -1287,9 +1330,9 @@ footer {
     font-family: $main_fonts;
     font-weight: 500;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 24px;
-    line-height: 32px;
+    line-height: 27px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -1301,7 +1344,7 @@ footer {
     i {
       margin-right: 19px;
       color: white;
-      font-size: 32px;
+      font-size: 27px;
       display: inline-block;
       @include max-screen(992px) {
         font-size: 25px;
@@ -1332,5 +1375,11 @@ footer {
   color: #2e8b6d;
   @include max-screen(992px) {
     font-size: 50px;
+  }
+}
+
+.navbar-brand{
+  img{
+    width: 180px;
   }
 }
