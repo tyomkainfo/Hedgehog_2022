@@ -364,6 +364,8 @@ header .navbar-light .navbar-toggler:focus {
 
 .main_block ul {
   margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .main_block ul li {

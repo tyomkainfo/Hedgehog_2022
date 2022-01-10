@@ -308,6 +308,8 @@ header {
 
   ul {
     margin-bottom: 70px;
+    position: relative;
+    z-index: 2;
     @include max-screen(992px) {
       margin-bottom: 50px;
     }
