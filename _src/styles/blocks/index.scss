@@ -1,7 +1,17 @@
-
+body{
+  padding-top: 164px;
+  @include max-screen(992px){
+    padding-top: 84px;
+  }
+}
 header {
   padding-top: 54px;
   padding-bottom: 54px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  background-color: white;
   @include max-screen(992px) {
     padding-top: 24px;
     padding-bottom: 24px;
