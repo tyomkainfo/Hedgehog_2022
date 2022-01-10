@@ -475,6 +475,9 @@ header {
         display: block;
       }
     }
+    @include max-screen(410px) {
+      text-align: right;
+    }
     @include max-screen(375px) {
       img {
         width: 47px;
@@ -484,6 +487,10 @@ header {
         top: 25px;
         left: 0px;
       }
+    }
+    @include max-screen(360px) {
+      font-size: 28px;
+      line-height: 32px;
     }
   }
 
@@ -1129,6 +1136,16 @@ header {
       line-height: 60px;
       padding: 0 2px;
       text-align: center;
+    }
+    @include max-screen(575px) {
+      font-size: 11px;
+      padding: 0 11px;
+    }
+    @include max-screen(360px) {
+      min-width: 135px;
+      font-size: 8px;
+      line-height: 45px;
+      padding: 0 2px;
     }
   }
 }

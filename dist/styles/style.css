@@ -1666,6 +1666,11 @@ footer .green_line {
     margin-bottom: 30px;
   }
 
+  .last_section .btn {
+    font-size: 11px;
+    padding: 0 11px;
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -1678,6 +1683,16 @@ footer .green_line {
     background-size: contain;
     left: 0;
     top: -30px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 410px) {
+  .our_task h2 {
+    text-align: right;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1715,6 +1730,24 @@ footer .green_line {
     width: 80px;
     top: 25px;
     left: 0px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 360px) {
+  .our_task h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .last_section .btn {
+    min-width: 135px;
+    font-size: 8px;
+    line-height: 45px;
+    padding: 0 2px;
   }
 
 @supports (-webkit-appearance:none) {
