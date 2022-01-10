@@ -662,6 +662,7 @@ header {
     @include max-screen(1400px) {
       font-size: 29px;
       //line-height: 39px;
+      margin-bottom: 10px;
     }
     &:after {
       content: "";
@@ -798,6 +799,7 @@ header {
     @include max-screen(1400px) {
       font-size: 29px;
       //line-height: 39px;
+      margin-bottom: 10px;
     }
     @include max-screen(992px) {
       font-size: 32px;
@@ -882,7 +884,7 @@ header {
 .experience {
   background-color: #f4f9ff;
   padding-top: 111px;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   @include max-screen(992px) {
     padding-top: 60px;
     margin-bottom: 50px;
@@ -971,6 +973,7 @@ header {
       //line-height: 39px;
       background-size: 37%;
       padding-right: 37px;
+      margin-bottom: 10px;
     }
     @include max-screen(992px) {
       font-size: 30px;
@@ -1060,12 +1063,13 @@ header {
     font-size: 56px;
     line-height: 56px;
     color: #252525;
-    margin-bottom: 77px;
+    margin-bottom: 57px;
     position: relative;
     text-align: center;
     @include max-screen(1400px) {
       font-size: 29px;
       line-height: 29px;
+
     }
     @include max-screen(992px) {
       font-size: 32px;

@@ -757,7 +757,7 @@ header .navbar-light .navbar-toggler:focus {
 .experience {
   background-color: #f4f9ff;
   padding-top: 111px;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 }
 
 .experience h2 {
@@ -857,7 +857,7 @@ header .navbar-light .navbar-toggler:focus {
   font-size: 56px;
   line-height: 56px;
   color: #252525;
-  margin-bottom: 77px;
+  margin-bottom: 57px;
   position: relative;
   text-align: center;
 }
@@ -1241,10 +1241,12 @@ footer .green_line {
 
   .service h2 {
     font-size: 29px;
+    margin-bottom: 10px;
   }
 
   .benefits h2 {
     font-size: 29px;
+    margin-bottom: 10px;
   }
 
   .experience h2 {
@@ -1255,6 +1257,7 @@ footer .green_line {
     font-size: 29px;
     background-size: 37%;
     padding-right: 37px;
+    margin-bottom: 10px;
   }
 
   .our_cases h2 {
