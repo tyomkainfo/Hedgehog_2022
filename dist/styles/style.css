@@ -237,6 +237,7 @@ header .btn img {
           animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
   display: inline-block;
   position: relative;
+  width: 24px;
 }
 
 header .btn:hover {
@@ -860,6 +861,7 @@ header .navbar-light .navbar-toggler:focus {
   -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  display: block;
 }
 
 .our_cases .keise.keise_1 {
@@ -990,6 +992,8 @@ header .navbar-light .navbar-toggler:focus {
   border: solid 2px transparent;
   min-width: 270px;
   margin: 0 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .last_section .btn:hover {
@@ -1368,10 +1372,6 @@ footer .green_line {
     left: 28%;
   }
 
-  .our_task h2:before {
-    display: none;
-  }
-
   .our_task p {
     font-size: 16px;
     line-height: 26px;
@@ -1638,6 +1638,16 @@ footer .green_line {
 @media screen and (max-width: 991px) {
   p {
     font-size: 16px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 850px) {
+  .our_task h2:before {
+    left: 20%;
   }
 
 @supports (-webkit-appearance:none) {

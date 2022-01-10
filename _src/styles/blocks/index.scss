@@ -177,6 +177,7 @@ header {
       animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
       display: inline-block;
       position: relative;
+      width: 24px;
     }
 
     &:hover {
@@ -462,9 +463,9 @@ header {
         left: 28%;
       }
     }
-    @include max-screen(992px) {
+    @include max-screen(850px) {
       &:before {
-        display: none;
+        left: 20%;
       }
     }
     @include max-screen(575px) {
@@ -982,6 +983,7 @@ header {
     width: 100%;
     transition: 0.3s;
     cursor: pointer;
+    display: block;
     @include max-screen(1199px) {
       height: 160px;
     }
@@ -1104,6 +1106,8 @@ header {
     border: solid 2px transparent;
     min-width: 270px;
     margin: 0 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     &:hover {
       border: solid 2px #2e8b6d;
       background-color: white;
