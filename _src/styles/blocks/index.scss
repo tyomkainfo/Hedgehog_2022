@@ -1,20 +1,32 @@
-body{
+body {
   padding-top: 164px;
-  @include max-screen(992px){
+  @include max-screen(992px) {
     padding-top: 84px;
   }
 }
+
 header {
-  padding-top: 54px;
-  padding-bottom: 54px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   position: fixed;
   width: 100%;
   z-index: 10;
-  top: 0;
+  top: 40px;
   background-color: white;
+  transition: 0.3s;
   @include max-screen(992px) {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  &.header__scroll {
+    top: 0;
+  }
+
+  &.header__scroll_2 {
+    @include max-screen(992px) {
+      top: 0;
+    }
   }
 
   .navbar {
@@ -523,17 +535,19 @@ header {
 
 /* who_me */
 
-.who_me{
+.who_me {
   padding: 70px 0;
   @include max-screen(992px) {
     padding: 30px 0;
   }
-  &.focus_me{
+
+  &.focus_me {
     padding: 0px 0 70px;
     @include max-screen(992px) {
       padding: 0px 0 30px;
     }
-    h2{
+
+    h2 {
       width: auto;
       background-size: inherit;
       background-position: right;
@@ -555,16 +569,18 @@ header {
         margin-bottom: 22px;
       }
     }
-    p{
+
+    p {
       @include max-screen(992px) {
         margin-bottom: 20px;
-        br{
+        br {
           display: none;
         }
       }
     }
   }
-  h2{
+
+  h2 {
     font-family: $main_fonts;
     font-weight: bold;
     font-size: 56px;
@@ -589,6 +605,7 @@ header {
       margin-bottom: 22px;
     }
   }
+
   p {
     font-family: $main_fonts;
     font-weight: 500;
@@ -596,9 +613,11 @@ header {
     line-height: 39px;
     color: #525252;
     margin-bottom: 50px;
-    &:last-of-type{
+
+    &:last-of-type {
       margin-bottom: 0;
     }
+
     @include max-screen(992px) {
       font-size: 16px;
       line-height: 26px;
@@ -608,11 +627,12 @@ header {
   }
 }
 
-.service{
+.service {
   padding: 70px 0;
   @include max-screen(992px) {
     padding: 30px 0;
   }
+
   h2 {
     font-family: $main_fonts;
     font-weight: bold;
@@ -623,6 +643,7 @@ header {
     position: relative;
     display: inline-block;
     margin-bottom: 60px;
+
     &:after {
       content: "";
       display: inline-block;
@@ -669,14 +690,16 @@ header {
       margin-bottom: 35px;
     }
   }
-  .col-6{
+
+  .col-6 {
     margin-bottom: 1.5rem;
     @include max-screen(992px) {
       padding: 0 0.25rem;
       margin-bottom: 0.5rem;
     }
   }
-  .item_1{
+
+  .item_1 {
     background-color: #f1f5fa;
     height: 277px;
     display: flex;
@@ -688,30 +711,37 @@ header {
     cursor: pointer;
     @include max-screen(992px) {
       height: 125px;
-      img{
+      img {
         width: 43px;
       }
     }
-    &:hover{
+
+    &:hover {
       transform: scale(1.1);
-      box-shadow: 0 20px 20px rgba(0,0,0,0.1)
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1)
     }
-    &.item_2{
+
+    &.item_2 {
       background-color: #f2f9fb;
     }
-    &.item_3{
+
+    &.item_3 {
       background-color: #f1faf6;
     }
-    &.item_4{
+
+    &.item_4 {
       background-color: #eff2fa;
     }
-    &.item_5{
+
+    &.item_5 {
       background-color: #fbf9f1;
     }
-    &.item_6{
+
+    &.item_6 {
       background-color: #faf6f2;
     }
-    p{
+
+    p {
       width: 100%;
       padding-top: 28px;
       text-transform: uppercase;
@@ -732,12 +762,13 @@ header {
 
 /* benefits */
 
-.benefits{
+.benefits {
   padding: 70px 0;
   @include max-screen(992px) {
     padding: 30px 0;
   }
-  h2{
+
+  h2 {
     font-family: $main_fonts;
     font-weight: bold;
     font-size: 56px;
@@ -750,11 +781,13 @@ header {
       line-height: 60px;
     }
   }
-  .owl-carousel.owl-carousel_2{
+
+  .owl-carousel.owl-carousel_2 {
     display: flex;
     justify-content: center;
   }
-  .item{
+
+  .item {
     height: 320px;
     display: flex;
     flex-wrap: wrap;
@@ -765,11 +798,12 @@ header {
     cursor: pointer;
     @include max-screen(992px) {
       height: 200px;
-      img{
+      img {
         width: 110px;
       }
     }
-    p{
+
+    p {
       width: 100%;
       padding-top: 50px;
       text-transform: uppercase;
@@ -786,14 +820,17 @@ header {
       }
     }
   }
-  .owl-nav{
+
+  .owl-nav {
     position: absolute;
     top: 30%;
     width: 100%;
-    .owl-prev{
+
+    .owl-prev {
       position: absolute;
       left: 30px;
-      &:after{
+
+      &:after {
         content: "\f053";
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
@@ -801,10 +838,12 @@ header {
         font-size: 23px;
       }
     }
-    .owl-next{
+
+    .owl-next {
       position: absolute;
       right: 30px;
-      &:after{
+
+      &:after {
         content: "\f054";
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
@@ -817,7 +856,7 @@ header {
 
 /* experience */
 
-.experience{
+.experience {
   background-color: #f4f9ff;
   padding-top: 111px;
   margin-bottom: 90px;
@@ -833,7 +872,8 @@ header {
   @include max-screen(376px) {
     padding-bottom: 240px;
   }
-  h2{
+
+  h2 {
     font-family: $main_fonts;
     font-weight: bold;
     font-size: 56px;
@@ -847,7 +887,8 @@ header {
       font-size: 32px;
       line-height: 37px;
     }
-    &:before{
+
+    &:before {
       position: absolute;
       width: 163px;
       height: 117px;
@@ -875,12 +916,13 @@ header {
   }
 }
 
-.facts{
+.facts {
   padding-bottom: 150px;
   @include max-screen(992px) {
     padding-bottom: 50px;
   }
-  h2{
+
+  h2 {
     font-family: $main_fonts;
     font-weight: bold;
     font-size: 56px;
@@ -915,14 +957,16 @@ header {
       padding-right: 45px;
     }
   }
-  .facts__item{
-    img{
+
+  .facts__item {
+    img {
       margin-bottom: 60px;
       @include max-screen(575px) {
         margin-bottom: 30px;
       }
     }
-    p{
+
+    p {
       font-family: $main_fonts;
       font-weight: 500;
       font-size: 18px;
@@ -934,12 +978,14 @@ header {
         line-height: 30px;
         margin-bottom: 50px;
       }
-      span{
+
+      span {
         font-weight: bold;
         color: #448a72;
       }
     }
   }
+
   .btn {
     color: #ffffff;
     font-size: 16px;
@@ -974,8 +1020,8 @@ header {
 
 /* our_cases */
 
-.our_cases{
-  h2{
+.our_cases {
+  h2 {
     font-family: $main_fonts;
     font-weight: bold;
     font-size: 56px;
@@ -989,11 +1035,13 @@ header {
       line-height: 32px;
     }
   }
-  .col-6, .col-12{
+
+  .col-6, .col-12 {
     padding: 0 0.25rem;
     margin-bottom: 0.5rem;
   }
-  .keise{
+
+  .keise {
     background-size: cover;
     background-position: center center;
     height: 210px;
@@ -1007,57 +1055,72 @@ header {
     @include max-screen(992px) {
       height: 120px;
     }
-    &.keise_1{
+
+    &.keise_1 {
       background-image: url("../images/keise_1.png");
-      &:hover{
+
+      &:hover {
         background-image: url("../images/keise_1_hov.png");
         transform: scale(1.1);
       }
     }
-    &.keise_2{
+
+    &.keise_2 {
       background-image: url("../images/keise_2.png");
-      &:hover{
+
+      &:hover {
         background-image: url("../images/keise_2_hov.png");
         transform: scale(1.1);
       }
     }
-    &.keise_3{
+
+    &.keise_3 {
       background-image: url("../images/keise_3.png");
-      &:hover{
+
+      &:hover {
         background-image: url("../images/keise_3_hov.png");
         transform: scale(1.1);
       }
     }
-    &.keise_4{
+
+    &.keise_4 {
       background-image: url("../images/keise_4.png");
-      &:hover{
+
+      &:hover {
         background-image: url("../images/keise_4_hov.png");
         transform: scale(1.1);
       }
     }
-    &.keise_5{
+
+    &.keise_5 {
       background-image: url("../images/keise_5.png");
-      &:hover{
+
+      &:hover {
         background-image: url("../images/keise_5_hov.png");
         transform: scale(1.1);
       }
     }
-    &.keise_6{
+
+    &.keise_6 {
       background-image: url("../images/keise_6.png");
-      &:hover{
+
+      &:hover {
         background-image: url("../images/keise_6_hov.png");
         transform: scale(1.1);
       }
     }
-    &.keise_7{
+
+    &.keise_7 {
       background-image: url("../images/keise_7.png");
-      &:hover{
+
+      &:hover {
         background-image: url("../images/keise_7_hov.png");
         transform: scale(1.1);
       }
     }
   }
-  .mb_60{
+
+  .mb_60 {
     margin-bottom: 160px;
     @include max-screen(992px) {
       margin-bottom: 60px;
@@ -1065,12 +1128,13 @@ header {
   }
 }
 
-.last_section{
+.last_section {
   padding-bottom: 102px;
   @include max-screen(992px) {
     padding-bottom: 60px;
   }
-  h3{
+
+  h3 {
     font-family: $main_fonts;
     font-weight: bold;
     font-size: 45px;
@@ -1080,6 +1144,7 @@ header {
     position: relative;
     display: inline-block;
     margin-bottom: 60px;
+
     &:before {
       content: "";
       display: inline-block;
@@ -1091,14 +1156,16 @@ header {
       left: -87px;
       top: -23px;
     }
-    span{
+
+    span {
       color: #f9ae0b;
     }
+
     @include max-screen(992px) {
       font-size: 26px;
       line-height: 34px;
       margin-bottom: 25px;
-      br{
+      br {
         display: none;
       }
       &:before {
@@ -1110,6 +1177,7 @@ header {
       }
     }
   }
+
   .btn {
     color: #ffffff;
     font-size: 16px;
@@ -1125,22 +1193,26 @@ header {
     margin: 0 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
+
     &:hover {
       border: solid 2px #2e8b6d;
       background-color: white;
       color: #2e8b6d;
       box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
     }
-    &.btn-primary{
+
+    &.btn-primary {
       border: solid 2px #2e8b6d;
       background-color: white;
       color: #2e8b6d;
+
       &:hover {
         background-color: #2e8b6d;
         color: white;
         border: solid 2px transparent;
       }
     }
+
     @include max-screen(992px) {
       min-width: 178px;
       line-height: 60px;
@@ -1163,9 +1235,10 @@ header {
 
 /*footer*/
 
-footer{
+footer {
   background-color: #2c2c2c;
   padding-top: 80px;
+
   .navbar-brand {
     font-family: $main_fonts;
     font-weight: bold;
@@ -1176,9 +1249,11 @@ footer{
     margin: 0;
     margin-bottom: 76px;
     display: inline-block;
-    span{
+
+    span {
       color: #34ae87;
     }
+
     @include max-screen(992px) {
       font-size: 31px;
       line-height: 31px;
@@ -1186,7 +1261,8 @@ footer{
       text-align: center;
     }
   }
-  h3{
+
+  h3 {
     font-family: $main_fonts;
     font-weight: bold;
     color: white;
@@ -1199,13 +1275,15 @@ footer{
       margin-bottom: 60px;
     }
   }
-  .row.align-content-lg-end.align-items-lg-end{
+
+  .row.align-content-lg-end.align-items-lg-end {
     padding-bottom: 53px;
     @include max-screen(992px) {
       padding-bottom: 20px;
     }
   }
-  .soc_set{
+
+  .soc_set {
     font-family: $main_fonts;
     font-weight: 500;
     color: #ffffff;
@@ -1219,7 +1297,8 @@ footer{
       margin-bottom: 18px;
       font-size: 18px;
     }
-    i{
+
+    i {
       margin-right: 19px;
       color: white;
       font-size: 32px;
@@ -1230,7 +1309,8 @@ footer{
       }
     }
   }
-  .green_line{
+
+  .green_line {
     background-color: #2e8b6d;
     padding: 44px 0;
     font-size: 18px;
@@ -1238,7 +1318,7 @@ footer{
     line-height: 18px;
     font-family: $main_fonts;
     font-weight: 400;
-    @include max-screen(992px){
+    @include max-screen(992px) {
       font-size: 16px;
       line-height: 15px;
       text-align: center;
@@ -1246,11 +1326,11 @@ footer{
   }
 }
 
-.title-error{
+.title-error {
   text-align: center;
   font-size: 222px;
   color: #2e8b6d;
-  @include max-screen(992px){
+  @include max-screen(992px) {
     font-size: 50px;
   }
 }

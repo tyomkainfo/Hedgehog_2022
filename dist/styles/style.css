@@ -108,13 +108,20 @@ body {
 }
 
 header {
-  padding-top: 54px;
-  padding-bottom: 54px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   position: fixed;
   width: 100%;
   z-index: 10;
-  top: 0;
+  top: 40px;
   background-color: white;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header.header__scroll {
+  top: 0;
 }
 
 header .navbar {
@@ -1264,6 +1271,10 @@ footer .green_line {
   header {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  header.header__scroll_2 {
+    top: 0;
   }
 
   header .navbar .nav-item {
