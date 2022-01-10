@@ -568,6 +568,7 @@ header {
       @include max-screen(1400px) {
         background-size: 44%;
         padding-right: 31px;
+        margin-bottom: 0;
       }
       @include max-screen(992px) {
         font-size: 32px;
@@ -629,7 +630,7 @@ header {
     font-size: 18px;
     line-height: 29px;
     color: #525252;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
     &:last-of-type {
       margin-bottom: 0;

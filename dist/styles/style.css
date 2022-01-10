@@ -551,7 +551,7 @@ header .navbar-light .navbar-toggler:focus {
   font-size: 18px;
   line-height: 29px;
   color: #525252;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .who_me p:last-of-type {
@@ -1233,6 +1233,7 @@ footer .green_line {
   .who_me.focus_me h2 {
     background-size: 44%;
     padding-right: 31px;
+    margin-bottom: 0;
   }
 
   .who_me h2 {
