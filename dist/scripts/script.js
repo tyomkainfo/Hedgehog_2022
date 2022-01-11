@@ -44,6 +44,14 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
 
 if (document.documentElement.clientWidth >= 768) {
     jQuery(function ($) {
@@ -59,14 +67,10 @@ if (document.documentElement.clientWidth >= 768) {
 }
 
 
-
 $('.nav-link').on('click', function () {
     $('.navbar-collapse').removeClass('show')({ scrollTop: $a.offset().top - 50}, 500);
 
 });
-
-
-
 document.addEventListener("click", addActive);
 
 function addActive(evt) {
