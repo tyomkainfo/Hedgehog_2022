@@ -158,7 +158,8 @@ header .navbar .nav-item .nav-link {
 }
 
 header .navbar .nav-item .nav-link:hover,
-header .navbar .nav-item .nav-link.active {
+header .navbar .nav-item .nav-link.active,
+header .navbar .nav-item .nav-link:focus {
   color: #2e8b6d;
 }
 
@@ -1745,6 +1746,11 @@ footer .green_line {
 }
 
 @media screen and (max-width: 575px) {
+  header {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
   .our_task h2:before {
     top: 15px;
     left: 10px;

@@ -18,7 +18,10 @@ header {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
+  @include max-screen(575px) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
   &.header__scroll {
     top: 0;
   }
@@ -99,7 +102,7 @@ header {
           font-size: 24px;
         }
 
-        &:hover, &.active {
+        &:hover, &.active, &:focus {
           color: #2e8b6d;
         }
       }

@@ -74,3 +74,9 @@ if (document.documentElement.clientWidth >= 768) {
     });
 }
 
+
+
+$('.nav-link').on('click', function () {
+    $('.navbar-collapse').removeClass('show')({ scrollTop: $a.offset().top - 50}, 500);
+
+});
