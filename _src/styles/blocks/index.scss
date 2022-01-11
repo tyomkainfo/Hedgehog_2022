@@ -160,10 +160,16 @@ header {
   .sub_menu {
     opacity: 0;
     transition: 0.4s;
+    @include max-screen(992px){
+      display: none;
+    }
   }
 
   .language ul:hover .sub_menu {
     opacity: 1;
+    @include max-screen(992px){
+      display: block;
+    }
   }
 
   .language .sub_menu {
@@ -917,7 +923,7 @@ header {
     line-height: 56px;
     text-align: center;
     color: #252525;
-    margin-bottom: 70px;
+    //margin-bottom: 70px;
     display: inline-block;
     position: relative;
     @include max-screen(1400px) {
@@ -1114,7 +1120,7 @@ header {
       background-image: url("../images/keise_1.png");
 
       &:hover {
-        background-image: url("../images/keise_1_hov.png");
+        background-image: url("../images/keise_1_hov.png")!important;
         transform: scale(1.1);
       }
     }
@@ -1123,7 +1129,7 @@ header {
       background-image: url("../images/keise_2.png");
 
       &:hover {
-        background-image: url("../images/keise_2_hov.png");
+        background-image: url("../images/keise_2_hov.png")!important;
         transform: scale(1.1);
       }
     }
@@ -1132,7 +1138,7 @@ header {
       background-image: url("../images/keise_3.png");
 
       &:hover {
-        background-image: url("../images/keise_3_hov.png");
+        background-image: url("../images/keise_3_hov.png")!important;
         transform: scale(1.1);
       }
     }
@@ -1141,7 +1147,7 @@ header {
       background-image: url("../images/keise_4.png");
 
       &:hover {
-        background-image: url("../images/keise_4_hov.png");
+        background-image: url("../images/keise_4_hov.png")!important;
         transform: scale(1.1);
       }
     }
@@ -1150,7 +1156,7 @@ header {
       background-image: url("../images/keise_5.png");
 
       &:hover {
-        background-image: url("../images/keise_5_hov.png");
+        background-image: url("../images/keise_5_hov.png")!important;
         transform: scale(1.1);
       }
     }
@@ -1159,7 +1165,7 @@ header {
       background-image: url("../images/keise_6.png");
 
       &:hover {
-        background-image: url("../images/keise_6_hov.png");
+        background-image: url("../images/keise_6_hov.png")!important;
         transform: scale(1.1);
       }
     }
@@ -1168,7 +1174,7 @@ header {
       background-image: url("../images/keise_7.png");
 
       &:hover {
-        background-image: url("../images/keise_7_hov.png");
+        background-image: url("../images/keise_7_hov.png")!important;
         transform: scale(1.1);
       }
     }
