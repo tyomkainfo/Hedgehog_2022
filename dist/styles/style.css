@@ -763,7 +763,7 @@ header .navbar-light .navbar-toggler:focus {
 /* experience */
 
 .experience {
-  background-color: #f4f9ff;
+  background-color: #fff7e7;
   padding-top: 111px;
   margin-bottom: 40px;
 }
@@ -1592,15 +1592,14 @@ footer .green_line {
   .experience {
     padding-top: 60px;
     margin-bottom: 50px;
-    background-image: url("../images/map_mob.png");
     background-repeat: no-repeat;
     background-position: bottom center;
-    padding-bottom: 270px;
   }
 
   .experience h2 {
     font-size: 32px;
     line-height: 37px;
+    margin-bottom: 0;
   }
 
   .experience h2:before {
@@ -1726,9 +1725,7 @@ footer .green_line {
   }
 
 @supports (-webkit-appearance:none) {
-    .experience {
-      background-image: url("../images/map_mob.webp");
-    }
+
 }
 }
 
@@ -1806,16 +1803,6 @@ footer .green_line {
   .facts h2 {
     font-size: 23px;
     padding-right: 45px;
-  }
-
-@supports (-webkit-appearance:none) {
-
-}
-}
-
-@media screen and (max-width: 376px) {
-  .experience {
-    padding-bottom: 240px;
   }
 
 @supports (-webkit-appearance:none) {

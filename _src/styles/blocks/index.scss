@@ -894,20 +894,20 @@ header {
 /* experience */
 
 .experience {
-  background-color: #f4f9ff;
+  background-color: #fff7e7;
   padding-top: 111px;
   margin-bottom: 40px;
   @include max-screen(992px) {
     padding-top: 60px;
     margin-bottom: 50px;
-    background-image: url("../images/map_mob.png");
+    //background-image: url("../images/map_mob.png");
     background-repeat: no-repeat;
     background-position: bottom center;
     //background-size: contain;
-    padding-bottom: 270px;
+    //padding-bottom: 270px;
   }
   @include max-screen(376px) {
-    padding-bottom: 240px;
+    //padding-bottom: 240px;
   }
 
   h2 {
@@ -927,6 +927,7 @@ header {
     @include max-screen(992px) {
       font-size: 32px;
       line-height: 37px;
+      margin-bottom: 0;
     }
 
     &:before {
