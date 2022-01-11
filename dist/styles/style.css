@@ -109,7 +109,7 @@ body {
 
 header {
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 0px;
   position: fixed;
   width: 100%;
   z-index: 10;
