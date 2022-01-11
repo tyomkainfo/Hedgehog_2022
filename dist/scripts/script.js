@@ -1,6 +1,8 @@
 function burgerMenu(icon) {
     icon.classList.toggle("change");
 }
+
+
 $(document).ready(function () {
     $('.owl-carousel_1').owlCarousel({
         loop: true,
@@ -41,26 +43,8 @@ $(document).ready(function () {
     }
 });
 
-$(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-// if (document.documentElement.clientWidth < 767) {
-//     jQuery(function ($) {
-//         $(window).scroll(function () {
-//             if ($(this).scrollTop() > 100) {
-//                 $('header').addClass('header__scroll_2');
-//             }
-//             else if ($(this).scrollTop() < 100) {
-//                 $('header').removeClass('header__scroll_2');
-//             }
-//         });
-//     });
-// }
+
+
 if (document.documentElement.clientWidth >= 768) {
     jQuery(function ($) {
         $(window).scroll(function () {
