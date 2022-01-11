@@ -64,3 +64,19 @@ $('.nav-link').on('click', function () {
     $('.navbar-collapse').removeClass('show')({ scrollTop: $a.offset().top - 50}, 500);
 
 });
+
+
+
+document.addEventListener("click", addActive);
+
+function addActive(evt) {
+    if (evt.target.classList.contains("nav-link")) {
+        // remove .active from all li.active
+        const allItems = document.querySelectorAll(".active");
+        for (let i=0; i<allItems.length; i += 1) {
+            allItems[i].classList.toggle("active");
+        }
+        // add .active to the current (clicked) item
+        evt.target.classList.toggle("active");
+    }
+}
