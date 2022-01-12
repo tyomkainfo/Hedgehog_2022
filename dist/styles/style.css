@@ -873,9 +873,11 @@ header .navbar-light .navbar-toggler:focus {
 .our_cases .col-12 {
   padding: 0 0.25rem;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 
-.our_cases .keise {
+.our_cases .col-6 .keise_1_hov,
+.our_cases .col-12 .keise_1_hov {
   background-size: cover;
   background-position: center center;
   height: 210px;
@@ -885,83 +887,84 @@ header .navbar-light .navbar-toggler:focus {
   transition: 0.3s;
   cursor: pointer;
   display: block;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  top: 0;
+  left: 0;
 }
 
-.our_cases .keise.keise_1 {
-  background-image: url("../images/keise_1.png");
+.our_cases .col-6 .keise,
+.our_cases .col-12 .keise {
+  background-size: cover;
+  background-position: center center;
+  height: 210px;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
 }
 
-.our_cases .keise.keise_1:hover {
-  background-image: url("../images/keise_1_hov.png") !important;
+.our_cases .col-6 .keise.keise_1:hover,
+.our_cases .col-12 .keise.keise_1:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.our_cases .keise.keise_2 {
-  background-image: url("../images/keise_2.png");
-}
-
-.our_cases .keise.keise_2:hover {
-  background-image: url("../images/keise_2_hov.png") !important;
+.our_cases .col-6 .keise.keise_2:hover,
+.our_cases .col-12 .keise.keise_2:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.our_cases .keise.keise_3 {
-  background-image: url("../images/keise_3.png");
-}
-
-.our_cases .keise.keise_3:hover {
-  background-image: url("../images/keise_3_hov.png") !important;
+.our_cases .col-6 .keise.keise_3:hover,
+.our_cases .col-12 .keise.keise_3:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.our_cases .keise.keise_4 {
-  background-image: url("../images/keise_4.png");
-}
-
-.our_cases .keise.keise_4:hover {
-  background-image: url("../images/keise_4_hov.png") !important;
+.our_cases .col-6 .keise.keise_4:hover,
+.our_cases .col-12 .keise.keise_4:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.our_cases .keise.keise_5 {
-  background-image: url("../images/keise_5.png");
-}
-
-.our_cases .keise.keise_5:hover {
-  background-image: url("../images/keise_5_hov.png") !important;
+.our_cases .col-6 .keise.keise_5:hover,
+.our_cases .col-12 .keise.keise_5:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.our_cases .keise.keise_6 {
-  background-image: url("../images/keise_6.png");
-}
-
-.our_cases .keise.keise_6:hover {
-  background-image: url("../images/keise_6_hov.png") !important;
+.our_cases .col-6 .keise.keise_6:hover,
+.our_cases .col-12 .keise.keise_6:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.our_cases .keise.keise_7 {
-  background-image: url("../images/keise_7.png");
-}
-
-.our_cases .keise.keise_7:hover {
-  background-image: url("../images/keise_7_hov.png") !important;
+.our_cases .col-6 .keise.keise_7:hover,
+.our_cases .col-12 .keise.keise_7:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.our_cases .col-6:hover .keise,
+.our_cases .col-12:hover .keise {
+  opacity: 0;
+}
+
+.our_cases .col-6:hover .keise_1_hov,
+.our_cases .col-12:hover .keise_1_hov {
+  opacity: 1;
 }
 
 .our_cases .mb_60 {
@@ -1147,62 +1150,6 @@ footer .green_line {
     background-image: url("../images/focus_h2.webp");
   }
 
-  .our_cases .keise.keise_1 {
-    background-image: url("../images/keise_1.webp");
-  }
-
-  .our_cases .keise.keise_1:hover {
-    background-image: url("../images/keise_1_hov.webp") !important;
-  }
-
-  .our_cases .keise.keise_2 {
-    background-image: url("../images/keise_2.webp");
-  }
-
-  .our_cases .keise.keise_2:hover {
-    background-image: url("../images/keise_2_hov.webp") !important;
-  }
-
-  .our_cases .keise.keise_3 {
-    background-image: url("../images/keise_3.webp");
-  }
-
-  .our_cases .keise.keise_3:hover {
-    background-image: url("../images/keise_3_hov.webp") !important;
-  }
-
-  .our_cases .keise.keise_4 {
-    background-image: url("../images/keise_4.webp");
-  }
-
-  .our_cases .keise.keise_4:hover {
-    background-image: url("../images/keise_4_hov.webp") !important;
-  }
-
-  .our_cases .keise.keise_5 {
-    background-image: url("../images/keise_5.webp");
-  }
-
-  .our_cases .keise.keise_5:hover {
-    background-image: url("../images/keise_5_hov.webp") !important;
-  }
-
-  .our_cases .keise.keise_6 {
-    background-image: url("../images/keise_6.webp");
-  }
-
-  .our_cases .keise.keise_6:hover {
-    background-image: url("../images/keise_6_hov.webp") !important;
-  }
-
-  .our_cases .keise.keise_7 {
-    background-image: url("../images/keise_7.webp");
-  }
-
-  .our_cases .keise.keise_7:hover {
-    background-image: url("../images/keise_7_hov.webp") !important;
-  }
-
   .last_section h3:before {
     background-image: url("../images/arrow_block_2.webp");
   }
@@ -1326,7 +1273,13 @@ footer .green_line {
     font-size: 50px;
   }
 
-  .our_cases .keise {
+  .our_cases .col-6 .keise_1_hov,
+  .our_cases .col-12 .keise_1_hov {
+    height: 160px;
+  }
+
+  .our_cases .col-6 .keise,
+  .our_cases .col-12 .keise {
     height: 160px;
   }
 
@@ -1656,7 +1609,13 @@ footer .green_line {
     line-height: 32px;
   }
 
-  .our_cases .keise {
+  .our_cases .col-6 .keise_1_hov,
+  .our_cases .col-12 .keise_1_hov {
+    height: 120px;
+  }
+
+  .our_cases .col-6 .keise,
+  .our_cases .col-12 .keise {
     height: 120px;
   }
 
