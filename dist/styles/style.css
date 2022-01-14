@@ -1121,6 +1121,91 @@ footer .green_line {
   width: 180px;
 }
 
+.modal-header .btn-close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 38px;
+  color: #252525;
+  font-family: "Geometria";
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.modal-title:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow_block_2.png");
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 116px;
+  margin-right: 23px;
+  position: absolute;
+  left: 86px;
+  top: 16px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  border-bottom: none;
+}
+
+.modal-body form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.modal-body form .form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  font-size: 24px;
+  color: #7b7f84;
+  font-family: "Geometria";
+  line-height: 24px;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+.modal-body form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.modal-body .btn {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Geometria";
+  font-weight: 500;
+  background-color: #2e8b6d;
+  border-radius: 55px;
+  line-height: 69px;
+  padding: 0 75px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: solid 2px transparent;
+  margin-bottom: 50px;
+}
+
+.modal-body .btn:hover {
+  border: solid 2px #2e8b6d;
+  background-color: white;
+  color: #2e8b6d;
+  -webkit-box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
+          box-shadow: 0 0 10px rgba(46, 139, 109, 0.5);
+}
+
 @supports (-webkit-appearance:none) {
   .main_block h1 {
     background-image: url("../images/bg_h1.webp");
@@ -1151,6 +1236,10 @@ footer .green_line {
   }
 
   .last_section h3:before {
+    background-image: url("../images/arrow_block_2.webp");
+  }
+
+  .modal-title:before {
     background-image: url("../images/arrow_block_2.webp");
   }
 }
@@ -1690,6 +1779,23 @@ footer .green_line {
     font-size: 50px;
   }
 
+  .modal-title:before {
+    position: absolute;
+    width: 100px;
+    background-size: contain;
+    left: 0;
+  }
+
+  .modal-body .btn {
+    margin: auto;
+    display: block;
+    max-width: 270px;
+    line-height: 78px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -1708,6 +1814,10 @@ footer .green_line {
 @media screen and (max-width: 850px) {
   .our_task h2:before {
     left: 20%;
+  }
+
+  .modal-title:before {
+    left: 0;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1734,6 +1844,12 @@ footer .green_line {
   .last_section .btn {
     font-size: 11px;
     padding: 0 11px;
+  }
+
+  .modal-title:before {
+    top: 15px;
+    left: 10px;
+    display: block;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1787,6 +1903,12 @@ footer .green_line {
     left: 0px;
   }
 
+  .modal-title:before {
+    width: 80px;
+    top: 25px;
+    left: 0px;
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -1803,6 +1925,11 @@ footer .green_line {
     font-size: 8px;
     line-height: 45px;
     padding: 0 2px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+    line-height: 32px;
   }
 
 @supports (-webkit-appearance:none) {
