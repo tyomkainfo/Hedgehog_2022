@@ -4,7 +4,6 @@
 <body>
 @@include('includes/header.html')
 
-
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -14,26 +13,29 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post" action="mailto:tyomka.info@gmail.com">
 
+                <form action="#" id="form">
                     <div class="mb-3">
                         <label for="exampleInputname" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleInputname" placeholder="Name">
+                        <input type="text" class="form-control _req" name="name" id="exampleInputname"
+                               placeholder="Name">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail"
+                        <input type="email" class="form-control _email _req" name="email" id="exampleInputEmail1"
+                               placeholder="E-mail"
                                aria-describedby="emailHelp">
 
                     </div>
                     <div class="mb-5">
                         <label for="exampleInputname" class="form-label"></label>
-                        <textarea class="form-control" placeholder="Message..."></textarea>
+                        <textarea class="form-control _req" name="message" placeholder="Message..."></textarea>
                     </div>
                     <div class="text-center">
-                        <a href="mailto:tyomka.info@gmail.com" class="btn btn-primary">Отправить</a>
+                        <button class="m-auto btn btn-primary" type="submit">Отправить</button>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
@@ -54,7 +56,7 @@
                     <li>Произведем товар под Вашим брендом</li>
                     <li>Снизим расходы – сохраним качество</li>
                 </ul>
-                <a href="mailto:tyomka.info@gmail.com" class="btn"> Связаться с
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> Связаться с
                     нами</a>
             </div>
             <div class="col-12 col-sm-12 col-lg-8 order-1 order-sm-1 order-md-2">

@@ -16,7 +16,8 @@ const webp_css     = require('gulp-webp-css');
 const rename       = require('gulp-rename');
 
 function html() {
-    return src('_src/pages/*.html')
+    return src(['_src/pages/*.html',
+    ])
         .pipe(file_include())
         .pipe(webp_html())
         .pipe(dest('dist/pages'))
@@ -43,7 +44,10 @@ function styles() {
 }
 
 function scripts() {
-    return src('_src/scripts/script.js')
+    return src([
+        '_src/scripts/*.js',
+        '!_src/scripts/*.min.js',
+    ])
         .pipe(file_include())
         .pipe(dest('dist/scripts'))
         .pipe(uglify())
@@ -71,6 +75,8 @@ function images() {
 
 function build() {
     return src ([
+        '_src/PHPMailer/**/*',
+        '_src/*',
         '_src/assets/**/*',
         '_src/fonts/**/*',
         '_src/styles/plugins/**/*.css',
