@@ -75,7 +75,7 @@ function images() {
 
 function build() {
     return src ([
-        '_src/PHPMailer/**/*',
+        '_src/vendor/**/*',
         '_src/*',
         '_src/assets/**/*',
         '_src/fonts/**/*',
