@@ -2,20 +2,28 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
+require 'vendor/autoload.php';
 
 $mail = new PHPMailer(true);
+
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'PHPMailer/language');
 $mail->IsHTML(true);
 
+$mail->isSMTP();
+$mail->SMTPAuth   = true;
+$mail->SMTPSecure = 'tls';
+$mail->Port       = 587;
+$mail->Host       = 'smtp.gmail.com';
+$mail->Username   = 'mailsendler2022@gmail.com';
+$mail->Password   = "thcwjdrnuzavurbr";
+
+
 //от кого
-$mail->setFrom("hedgehoginchina@example.com");
+$mail->setFrom("mailsendler2022@gmail.com");
 ////кому отправить
-$mail->addAddress("hedgehoginchina@protonmail.com");
+$mail->addAddress("fintisov.vadim@gmail.com");
 ////Тема письма
 $mail->Subject = "hedgehoginchina.net";
 

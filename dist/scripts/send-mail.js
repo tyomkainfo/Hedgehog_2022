@@ -15,6 +15,7 @@ async function formSend(e) {
             method: "POST",
             body: formData
         });
+
         if (response.ok) {
             let result = await response.json();
             alert(result.message);
